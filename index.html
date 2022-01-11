@@ -6,17 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Utkarsh- </></title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <div class="header">
+            <img src="/images/menu.png" alt="" class="menu-btn">
             <div class="logo">
                 <h1><a href="#">Utkarsh Singh</a></h1>
             </div>
-            <nav>
+            <nav class="nav-go nav">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#skills">Experties</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -33,8 +35,9 @@
                     <br><br>
                     <a href="#contact">Contact Me</a>
                 </div>
+                <br><br><br>
                 <div class="img">
-                    <img src="/images/utkarsh.jpg" alt="img">
+                    <img src="/images/utkarsh.jpg" alt="Utkarsh">
                 </div>
             </div>
             <br><br><hr><br><br>
@@ -44,7 +47,8 @@
                 <div class="abouttxt">
                     <p class="txt">
                         I'm <b>Utkarsh Singh</b>, Currently in 8<sup>th</sup>
-                        Standard. I'm From Gonda Uttar Pradesh, India. I'm a Freelancer, Web Developer, Front-End
+                        Standard. I'm From Gonda Uttar Pradesh, India. I'm a
+                        Freelancer, Web Developer, Front-End
                         Developer, Ethical Hacker.
                         <br><br>
                         I am self motivated, smart
@@ -61,16 +65,36 @@
                         skills quickly, loves to explore new horizons and is
                         driven by new technology.
                         <br><br>
-                        My Hobbies are Programming, Gaming, Surfing Internet, Learning new technologies, etc........
+                        My Hobbies are Programming, Gaming, Surfing Internet,
+                        Learning new technologies, etc........
                     </p>
                 </div>
             </div>
             <br><br><hr><br><br>
             <div class="skills" id="skills">
-                <p class="heading">My Skills</p>
+                <p class="heading">Experties</p>
                 <br>
                 <div class="skillscontent">
-                    <h2>Work In Progress</h2>
+                    <!-- <h2>Work In Progress</h2> -->
+                    <p>HTML:</p>
+                    <div class="container">
+                        <div class="skills html">95%</div>
+                    </div>
+
+                    <p>CSS:</p>
+                    <div class="container">
+                        <div class="skills css">80%</div>
+                    </div>
+
+                    <p>JavaScript:</p>
+                    <div class="container">
+                        <div class="skills js">40%</div>
+                    </div>
+
+                    <p>C:</p>
+                    <div class="container">
+                        <div class="skills c">70%</div>
+                    </div>
                 </div>
             </div>
             <br><br><hr><br><br>
@@ -78,23 +102,46 @@
                 <p class="heading">Contact Me</p>
                 <br>
                 <div class="contactcontent">
-                    <a href="mailto:29singhutkarsh2907@gmail.com" target="_blank" Subject="">Mail: 29singhutkarsh2907@gmail.com</a>
+                    <a href="mailto:29singhutkarsh2907@gmail.com"
+                        target="_blank" Subject="">Mail:
+                        29singhutkarsh2907@gmail.com</a>
                     <br>
-                    <a href="callto:7007217225">Phone: 7007217225</a>
+                    <a href="tel:7007217225">Phone: 7007217225</a>
                     <br>
                 </div>
             </div>
         </div>
         <div class="accounts">
-                <a href="https://www.upwork.com/freelancers/~0145c6db557b7b95c4">Upwork</a>
-                <br>
-                <a href="https://www.hackerrank.com/29singhutkarsh21">HackerRank</a>
+            <a href="https://www.upwork.com/freelancers/~0145c6db557b7b95c4"><img
+                    src="/images/upwork.jpg" alt="">Upwork</a>
+            |
+            <a href="https://www.hackerrank.com/29singhutkarsh21"><img
+                    src="/images/hackerrank.jpg" alt="">HackerRank</a>
+            |
+            <a href="https://github.com/utkarshsinghsolanki"><img
+                    src="/images/github.png" alt="">Github</a>
+            |
+            <a href="mailto:29singhutkarsh2907@gmail.com"><img
+                    src="/images/gmail.jpg" alt="">Gmail</a>
         </div>
-
+        <br><br><hr><br><br>
         <footer>
             <div class="cpyright">
                 <h1>&copy;Copyright 2022 || All Right Reserved.</h1>
             </div>
         </footer>
     </body>
+
+    <script>
+        let btn = document.querySelector('.menu-btn')
+        document.querySelector('.menu-btn').addEventListener("click", ()=>{
+            document.querySelector('.nav').classList.toggle('nav-go')
+            if(document.querySelector('.nav').classList.contains('nav-go')){
+                btn.style.transform = 'rotate(0deg)'
+            }
+            else{
+                btn.style.transform = 'rotate(180deg)'
+            }
+        })
+    </script>
 </html>
