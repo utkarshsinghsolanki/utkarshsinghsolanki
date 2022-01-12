@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio's</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <img src="/images/menu.png" alt="" class="menu-btn">
+        <div class="logo">
+            <h1><a href="/">Utkarsh Singh</a></h1>
+        </div>
+        <nav class="nav-go nav">
+            <ul>
+                <li><a href="/index.html#home">Home</a></li>
+                <li><a href="/index.html #about">About</a></li>
+                <li><a href="/index.html#skills">Experties</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="/index.html #contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="portfolio">
+        <h1>Work In Progress....!</h1>
+    </div>
+</body>
+<script>
+    let btn = document.querySelector('.menu-btn')
+    document.querySelector('.menu-btn').addEventListener("click", ()=>{
+        document.querySelector('.nav').classList.toggle('nav-go')
+        if(document.querySelector('.nav').classList.contains('nav-go')){
+            btn.style.transform = 'rotate(0deg)'
+        }
+        else{
+            btn.style.transform = 'rotate(180deg)'
+        }
+    })
+</script>
+</html>

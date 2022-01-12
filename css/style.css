@@ -44,6 +44,8 @@ body {
     font-family: 'Pacifico', cursive;
     color: #fff;
     text-decoration: none;
+    background: #000;
+    border-radius: 10px;
 }
 
 .header nav ul li {
@@ -111,6 +113,7 @@ body {
     text-decoration: none;
     border: 2px solid #10bea4;
     border-radius: 5px;
+    margin: 0 10px;
 }
 
 .intro a:hover {
@@ -183,7 +186,7 @@ body {
 }
 
 .html,.css,.js,.c{
-    border-radius: 5px;
+    border-radius: 100px;
     background: #10bea4;
     padding: 5px;
     margin: 10px 0; 
@@ -191,7 +194,7 @@ body {
 .container{
     width: 80%;
     background: rgb(10, 10, 10);
-    border-radius: 5px;
+    border-radius: 100px;
     margin:auto;
 }
 
@@ -216,10 +219,14 @@ body {
     font-size: 20px
 }
 
-.contactcontent a {
+.contact-btn{
     color: #fff;
     margin: 10px 0;
     text-decoration: none;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    transform: scale(1.04);
 }
 
 .accounts {
@@ -239,7 +246,7 @@ body {
 .accounts a:hover {
     /* color: rgb(214, 214, 214); */
     text-decoration: underline;
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .accounts a img {
@@ -284,7 +291,7 @@ footer {
         position: absolute;
         left: 15px;
         cursor: pointer;
-        min-width: 20px;
+        min-width: 25px;
     }
 
     .nav-go {
