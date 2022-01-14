@@ -17,9 +17,9 @@
             <nav>
                 
             <div style="width:50%;">
-                <img src="images/Logo.jpg" id="menuopn" class="Logo" height="50px" width="50px"alt="" onclick="menutoggle()">
-                <img src="images/Logo.jpg" id="menucls" class="Logo" height="50px" width="50px"alt="" onclick="menuclose()">
-                <ul id="menu">
+                <img src="images/Logo.jpg" id="menubtn" class="Logo" height="50px" width="50px"alt="" onclick="menutoggle()">
+                <!-- <img src="images/Logo.jpg" id="menucls" class="Logo" height="50px" width="50px"alt="" onclick="menuclose()"> -->
+                <ul class="menu menu-go">
                     <li class="li"><a href="#" class="nav-btn"><p><img src="images/home.png" width="20px" > Home</p></a></li>
                     <li class="li"><a href="#Blog" class="nav-btn"><p><img src="images/writing.png" width="20px" > Blog</p></a></li>
                     <li class="li"><a href="#About" class="nav-btn"><p><img src="images/info.png" width="20px" > About</p></a></li>
@@ -128,22 +128,20 @@
 
 
     <script>
-        var menu =document.getElementById("menu");
-        var menuopn =document.getElementById("menuopn");
-        function menutoggle(){
-            menu.style.left = "0px";
-            menu.style.transition = "1s";
-            menuopn.style.display="none";
-            menucls.style.display="block";
-        }
-        var menucls =document.getElementById("menucls");
-        function menuclose(){
-            menu.style.left = "-550px";
-            menu.style.transition = "1s";
-            menuopn.style.display="block";
-            menucls.style.display="none";
-        }
+        
+
+        let btn = document.querySelector('.Logo')
+        document.querySelector('.Logo').addEventListener("click", ()=>{
+            document.querySelector('.menu').classList.toggle('menu-go')
+            if(document.querySelector('.menu').classList.contains('menu-go')){
+                btn.style.transform = 'rotate(0deg)'
+            }
+            else{
+                btn.style.transform = 'rotate(36    0deg)'
+            }
+        })
         
 
     </script>
+
 </html>
