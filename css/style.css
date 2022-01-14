@@ -64,8 +64,6 @@ body {
 }
 
 .header nav ul li a:hover {
-    /* background: transparent; */
-    /* border: 2px solid #10bea4; */
     opacity: .8;
     text-decoration: underline;
 }
