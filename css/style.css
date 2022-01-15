@@ -274,9 +274,18 @@ footer {
         display: block;
         margin: 40px 12px;
     }
+    .header nav ul li a {
+        background: #10bea4;
+    }
+    
+    .header nav ul li a:hover {
+        text-decoration: underline;
+        border: 2px solid #10bea4;
+    }
 
     .nav {
-        background: linear-gradient(to right, #171717, #0d0d0d, #000);
+        background: linear-gradient(#1e1e1e,#000,#10bea4);
+        /* background: linear-gradient(to right, #171717, #0d0d0d, #000); */
         padding: 10px;
         position: absolute;
         left: 0;
