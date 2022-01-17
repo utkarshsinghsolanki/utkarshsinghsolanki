@@ -4,8 +4,9 @@
         <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0,
             maximum-scale=1.0, user-scalable=no" />
-        <title>listing directory /portfolio/</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <title>Portfolio's</title>
+        <link rel="stylesheet" href="/files/style.css">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <style>* {
             margin: 0;
             padding: 0;
@@ -387,9 +388,13 @@ ul#files.view-details li.header {
           btn.style.transform = 'rotate(180deg)'
       }
   })
+
 </script> 
     </head>
-    <body class="directory">
+    <body class="directory" onload="preloader()">
+      <div class="preloader">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
         <div class="header">
             <img src="/images/menu.png" alt="" class="menu-btn">
             <div class="logo">
@@ -435,4 +440,9 @@ ul#files.view-details li.header {
         </div>
     </body>
     
+    <script>  
+      let loader = document.querySelector('.preloader')
+      function preloader() {
+          loader.style.display = "none";
+      }</script>
 </html>
