@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,
-            maximum-scale=1.0, user-scalable=no" />
-        <title>Portfolio's</title>
-        <link rel="stylesheet" href="/files/style.css">
-        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-        <style>* {
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+      maximum-scale=1.0, user-scalable=no" />
+    <title>Portfolio's</title>
+    <link rel="stylesheet" href="/files/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <style>* {
             margin: 0;
             padding: 0;
             outline: 0;
@@ -311,7 +311,7 @@ ul#files.view-details li.header {
 }
 
 </style>
-<script>
+    <script>
   function $(id){
     var el = 'string' == typeof id
       ? document.getElementById(id)
@@ -377,72 +377,61 @@ ul#files.view-details li.header {
     $('search').on('keyup', search);
   });
 </script>
-<script>
-  let btn = document.querySelector('.menu-btn')
-  document.querySelector('.menu-btn').addEventListener("click", ()=>{
-      document.querySelector('.nav').classList.toggle('nav-go')
-      if(document.querySelector('.nav').classList.contains('nav-go')){
-          btn.style.transform = 'rotate(0deg)'
-      }
-      else{
-          btn.style.transform = 'rotate(180deg)'
-      }
-  })
 
-</script> 
-    </head>
-    <body class="directory" onload="preloader()">
-      <div class="preloader">
-        <span class="loader"><span class="loader-inner"></span></span>
+  </head>
+  <body class="directory" onload="preloader()">
+    <div class="preloader">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="header">
+      <img src="/images/menu.png" alt="" class="menu-btn">
+      <div class="logo">
+        <h1><a href="/">Utkarsh Singh</a></h1>
       </div>
-        <div class="header">
-            <img src="/images/menu.png" alt="" class="menu-btn">
-            <div class="logo">
-                <h1><a href="#">Utkarsh Singh</a></h1>
-            </div>
-            <nav class="nav-go nav">
-                <ul>
-                    <li><a href="/#home">Home</a></li>
-                    <li><a href="/#about">About</a></li>
-                    <li><a href="/#skills">Experties</a></li>
-                    <li><a href="/portfolio/">Portfolio</a></li>
-                    <li><a href="/#contact">Contact</a></li>
+      <nav class="nav-go nav">
+        <ul>
+          <li><a href="/#home">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#skills">Experties</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/#contact">Contact</a></li>
 
-                </ul>
-            </nav>
-        </div>
-        <div class="main">
-            <input id="search" type="text" placeholder="Search"
-                autocomplete="off" />
-            <div id="wrapper">
-                <h1><a href="/">~</a> / <a href="/portfolio">Portfolio</a> /
-                </h1>
-                <ul id="files" class="view-tiles">
-                  <!-- <li><a href="/" class="icon
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <input id="search" type="text" placeholder="Search"
+        autocomplete="off" />
+      <div id="wrapper">
+        <h1><a href="/">~</a> / <a href="/portfolio">Portfolio</a> /
+        </h1>
+        <ul id="files" class="view-tiles">
+          <!-- <li><a href="/" class="icon
                             icon-directory" title=".."><span class="name">..</span><span
                                 class="size"></span><span class="date"></span></a></li> -->
-                    <li><a href="/portfolio/Blog%20Website" class="icon
-                            icon-directory" title="Blog Website"><span
-                                class="name">Blog Website</span><span
-                                class="size"></span><span class="date">1/12/2022
-                                5:57:31 PM</span></a></li>
-                    <li><a href="/portfolio/Education%20Portal%20STS"
-                            class="icon icon-directory" title="Education Portal
-                            STS"><span class="name">Education Portal STS</span><span
-                                class="size"></span><span class="date">1/12/2022
-                                5:57:32 PM</span></a></li>
-                    <li><a href="/portfolio/Fantechgamer" class="icon
-                            icon-directory" title="Fantechgamer"><span
-                                class="name">Fantechgamer</span><span
-                                class="size"></span><span class="date">1/12/2022
-                                5:57:32 PM</span></a></li></ul>
-            </div>
-        </div>
-    </body>
-    
-    <script>  
+          <li><a href="/portfolio/Blog%20Website" class="icon
+              icon-directory" title="Blog Website"><span
+                class="name">Blog Website</span><span
+                class="size"></span><span class="date">1/12/2022
+                5:57:31 PM</span></a></li>
+          <li><a href="/portfolio/Education%20Portal%20STS"
+              class="icon icon-directory" title="Education Portal
+              STS"><span class="name">Education Portal STS</span><span
+                class="size"></span><span class="date">1/12/2022
+                5:57:32 PM</span></a></li>
+          <li><a href="/portfolio/Fantechgamer" class="icon
+              icon-directory" title="Fantechgamer"><span
+                class="name">Fantechgamer</span><span
+                class="size"></span><span class="date">1/12/2022
+                5:57:32 PM</span></a></li></ul>
+      </div>
+    </div>
+  </body>
+<script src="/files/script.js"></script>
+  <script>  
       let loader = document.querySelector('.preloader')
       function preloader() {
           loader.style.display = "none";
-      }</script>
+      }
+    </script>
 </html>

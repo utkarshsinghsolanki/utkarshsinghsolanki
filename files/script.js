@@ -14,4 +14,3 @@ let loader = document.querySelector('.preloader')
 function preloader() {
     loader.style.display = "none";
 }
-
