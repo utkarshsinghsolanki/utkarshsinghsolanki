@@ -15,9 +15,9 @@
             <ul>
                 <li><a href="index.html" class="nav-btn"><img src="images/home.png" alt="menu" class="default-ico">Home</a></li>
                 <li><a href="menu.html"><img src="images/menu.png" alt="" class="ico">Menu</a></li>
-                <li><a href="#"><img src="images/gallery.png" alt="" class="ico">Gallery</a></li>
-                <li><a href="#"><img src="images/info.png" alt="" class="ico">About Us</a></li>
-                <li><a href="#"><img src="images/contact.png" alt="" class="ico">Contact</a></li>
+                <li><a href="gallery.html"><img src="images/gallery.png" alt="" class="ico">Gallery</a></li>
+                <li><a href="about.html"><img src="images/info.png" alt="" class="ico">About Us</a></li>
+                <li><a href="contact.html"><img src="images/contact.png" alt="" class="ico">Contact</a></li>
             </ul>
         </nav>
         <img src="images/menu-btn.png" alt="" class="menu-btn">
@@ -27,7 +27,7 @@
             <p>"Delight in every bite"</p>
         </div>
     </div>
-    <main>
+    <main onclick="navgo()">
         <span class="greeting" id="home">Welcome To Joy's Cafe</span>
         <div class="home">
             <div class="about">
@@ -51,7 +51,7 @@
         <div class="mg">
             <div class="mg-123">
                 <h1>Quality you can taste </h1>
-                <p>We serve delicious vegetarian food made using fresh, qquality
+                <p>We serve delicious vegetarian food made using fresh, quality
                     <br>
                     ingredients catering to a multitude of taste preferences,
                     <br>
@@ -72,9 +72,9 @@
                         <div class="sctext">
                             <h1>Delicious Menu</h1>
                             <br>
-                        <p>
-                            Our flavorful menu offers a wide variety of dishes. From samosas to dosas to curries with different spice levels, you're sure to find an item from our delicious menu right for you.
-                         </p>
+                            <p>
+                                Our flavorful menu offers a wide variety of dishes. From samosas to dosas to curries with different spice levels, you're sure to find an item from our delicious menu right for you.
+                            </p>
                         </div>
                     </div>
                     <div class="service-content">
@@ -104,16 +104,5 @@
             <h2>Copyright &copy; 2022 Joy's Cafe. || All rights reserved.</h2>
         </footer>
 </body>
-<script>
-    let btn = document.querySelector(".menu-btn")
-    document.querySelector('.menu-btn').addEventListener("click", () => {
-        document.querySelector('.nav').classList.toggle('nav-go')
-        if (document.querySelector('.nav').classList.contains('nav-go')) {
-            btn.style.transform = 'rotate(0deg)'
-        }
-        else {
-            btn.style.transform = 'rotate(180deg)'
-        }
-    })
-</script>
+<script src="js/main.js"></script>
 </html>

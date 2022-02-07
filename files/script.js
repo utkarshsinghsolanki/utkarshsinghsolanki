@@ -3,9 +3,10 @@ document.querySelector('.menu-btn').addEventListener("click", () => {
     document.querySelector('.nav').classList.toggle('nav-go')
     if (document.querySelector('.nav').classList.contains('nav-go')) {
         btn.style.transform = 'rotate(0deg)'
+
     }
     else {
-        btn.style.transform = 'rotate(180deg)'
+        btn.style.transform = 'rotate(180deg)';
     }
 })
 

@@ -2,14 +2,37 @@
     .nav{
         position: absolute;
         right: 0;
+        top: 15vh;
+        background: #e7e7e7f1;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 250px;
+        overflow: hidden;
+    }
+    .nav-go{
+        overflow: hidden;
+        height: 0vh;
+        transform: scaleY(0);
+        position: absolute;
+        right: 0;
         top:15vh;
+        z-index: 0;
         background: #e7e7e7;
         box-sizing: border-box;
         padding: 20px;
     }
-    .nav-go{
-        overflow: hidden;
-        transform: scaleY(0);
+    nav ul li a{
+        /* box-sizing: border-box; */
+        width: 120px;
+        display:flex;
+        justify-content: left;
+        align-items: center;
+    }
+    nav ul li {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
     }
     .menu-btn{
         display: block;
@@ -30,6 +53,14 @@
         width: 100%;
         background-position: 0 15vh ;
         background-size: 100%, 100%;
+        align-items: center;
+    }
+    .heading{
+        height: 150px;
+        width: 100%;
+        background-position: 0 15vh ;
+        background-size: 100%, 100%;
+        align-items: center;
     }
     .home{
         flex-direction: column;
@@ -56,6 +87,20 @@
     }
     .logo{
         width: 100%;
+    }
+    .greeting{
+        margin: 10vh 5vh;
+        font-size: 2rem;
+    }
+    .ways{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+
+    }
+    .ways hr{
+        width: 60%;
     }
 }
 @media screen and (max-width: 1200px) {
