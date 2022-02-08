@@ -49,7 +49,7 @@
         font-size: 8vw;
     }
     .bg{
-        height: 50vh;
+        height: 40vh;
         width: 100%;
         background-position: 0 15vh ;
         background-size: 100%, 100%;
@@ -101,6 +101,21 @@
     }
     .ways hr{
         width: 60%;
+    }
+    .contact form{
+        height: unset;
+    }
+    .details input{
+        width: 320px;
+    }
+    .extra-details input{
+        width: 150px;
+    }
+    #guest{
+        width: 130px;
+    }
+    .msg input{
+        width: 320px;
     }
 }
 @media screen and (max-width: 1200px) {
