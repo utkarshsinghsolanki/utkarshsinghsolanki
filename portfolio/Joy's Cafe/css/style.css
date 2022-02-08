@@ -234,7 +234,6 @@ main{
 }
 
 footer{
-    background: linear-gradient(#064f8a,#b927b994);
     display: flex;
     text-align: center;
     align-items: center;
@@ -243,6 +242,18 @@ footer{
     /* height:10vh; */
     padding: 10px 50px;
     display: flex;
+    animation: footer 10s linear infinite;
+}
+@keyframes footer{
+    0%{
+        background: #b92779;
+    }
+    50%{
+        background: #064f8a;
+    }
+    100%{
+        background: #b9277c;
+    }
 }
 
 
