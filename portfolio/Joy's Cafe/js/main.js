@@ -38,9 +38,8 @@ function requried(){
     }
 }
 function loaded(){
-    let i = randomNumber(1000,2000)
         setInterval(() => {
             document.querySelector('.preloader').style.display = 'none';
             
-        }, i);
+        }, 800);
 }
