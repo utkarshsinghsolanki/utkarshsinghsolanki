@@ -8,6 +8,53 @@
     transition: 1s;
     scroll-behavior: smooth;
 }
+.preloader{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    text-align: center;
+    background: rgb(201, 201, 201);
+    overflow: hidden;
+    z-index: 5;
+}
+.preloader h1{
+    color:#064f8a;
+}
+.loader{
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+    border: 10px solid  #064f8a ;
+    animation: loader 1s linear infinite;
+    border-top: 10px solid #b927b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    40%{
+        border-top: 10px solid #064f8a;
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* HOME PAGE START */
 
 /* Header */
 header{

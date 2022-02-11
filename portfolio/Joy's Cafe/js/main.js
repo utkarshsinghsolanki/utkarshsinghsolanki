@@ -18,7 +18,10 @@ function requried(){
     let name = document.getElementById('name').value;
     let phone = document.getElementById('phone').value;
     let date = document.getElementById('date').value;
-    if((!name==0) && (!phone==0) && (!date==0)){
+    name = name.length;
+    phone = phone.length;
+    date = date.length;
+    if((!name==0) && (phone==10) && (!date==0)){
         alert("Reservation Recived");
     }
     if(name==0){
@@ -30,4 +33,14 @@ function requried(){
     if(date==0){
         alert("Please Fill Up Date.");
     }
+    if(phone!=10){
+        alert("Please Enter Vaild Phone No.");
+    }
+}
+function loaded(){
+    let i = randomNumber(1000,2000)
+        setInterval(() => {
+            document.querySelector('.preloader').style.display = 'none';
+            
+        }, i);
 }
