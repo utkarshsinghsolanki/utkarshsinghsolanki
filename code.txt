@@ -7221,4 +7221,3 @@ footer{
         text-align: center;
     }
 }
-

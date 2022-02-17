@@ -20,3 +20,7 @@ function navgo(){
     btn.style.transform = 'rotate(0deg)'
     
 }
+if($(window.screenY>200)){
+    let header= document.querySelector('.header');
+    header.style.display = "none";
+}

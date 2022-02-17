@@ -73,6 +73,7 @@ body {
     width: 100%;
     z-index: 2;
     height: 10vh;
+    text-align: center;
 }
 
 .header h1 a {
@@ -185,13 +186,14 @@ body {
 }
 
 .img img {
-    border-radius: 10%;
+    border-radius: 10%;  
     width: 60vw;
     height: 65vw;
     /* border: 5px double #10bea4; */
     margin: 50px;
     max-width: 280px;
-    max-height: 300px;
+    max-height: 400px;
+    min-height: 300px;
 
 }
 
