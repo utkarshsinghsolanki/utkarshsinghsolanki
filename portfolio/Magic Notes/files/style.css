@@ -77,23 +77,25 @@ main{
     cursor: pointer;
     border-radius: 5px;
 }
-.add-btn:hover{
+.add-btn:active{
+    transition:0s;
     background: #174ea6;
 }
 .notes-container{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    width: 60vw;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
 }
 .notes{
-    min-width: 150px;
+    min-width: 250px;
     margin:50px;
     padding: 10px;
     background: rgba(240, 240, 240, 0.658);
     border-radius: 5px;
     overflow: visible;
-    /* border: 1px solid #1a73e8; */
+    border: 1px solid #1a73e8;
 }
 .notes button{
     background: #1a73e8;
@@ -103,6 +105,7 @@ main{
     cursor: pointer;
     border-radius: 5px;
 }
-.notes button:hover{
+.notes button:focus{
+    transition:0s;
     background: #174ea6;
 }
