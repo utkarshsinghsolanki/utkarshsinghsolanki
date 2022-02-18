@@ -34,11 +34,13 @@ addbtn.addEventListener('click', function addnote(){
 // To display error message when user has not enter any value
     if(text.length == 0){
         noteobj.pop();
+        noteheadobj.pop();
         alert('Cannot Create Empty Note');
     }
-    if(heading.length == 0){
+    if(heading.length == 0 && text.length != 0){
         noteheadobj.pop();
-        alert('Cannot Create Note Without Heading');
+        noteheadobj.push('NOTE' + ' ' + (noteheadobj.length+1))
+        // alert('Cannot Create Note Without Heading');
     }
 // Uploading content to localStorage
     localStorage.setItem('heading', JSON.stringify(noteheadobj));
@@ -62,12 +64,12 @@ function displayNote(){
     else {
         noteobj = JSON.parse(note);
     }
-    if(noteheading == null){
-        noteheadobj = [];
-    }
-    else{
-        noteheadobj = JSON.parse(noteheading);
-    }
+    // if(noteheading == null){
+    //     noteheadobj = [];
+    // }
+    // else{
+    // }
+    noteheadobj = JSON.parse(noteheading);
     html = '';                                                  //Declaring html as an empty string
 // Running a forEach loop for noteobj so every element in an array could be displayed
     noteobj.forEach(function(element,index){
