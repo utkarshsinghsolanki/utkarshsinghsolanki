@@ -56,7 +56,14 @@ main{
     padding: 25px;
     border: 2px solid rgb(70, 70, 70);
 }
+#note-heading{
+    width: 60vw;
+    height: 5vh;
+    font-weight: bold;
+    padding: 5px;
+}
 #note{
+    padding: 5px;
     width: 60vw;
     height: 10vh;
     margin: auto;
