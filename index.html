@@ -18,6 +18,10 @@
             <h1>Loading....</h1>
         </div> -->
         <div class="header">
+            <img src="/images/menu.png" alt="" class="menu-btn">
+            <div class="logo">
+                <h1><a href="#">Utkarsh Singh</a></h1>
+            </div>
             <nav class="nav-go nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -28,10 +32,6 @@
 
                 </ul>
             </nav>
-            <img src="/images/menu.png" alt="" class="menu-btn">
-            <div class="logo">
-                <h1><a href="#">Utkarsh Singh</a></h1>
-            </div>
         </div>
 
         <div class="bgimg" onclick="navgo()">
@@ -44,7 +44,7 @@
             <div class="intro">
                 <div class="text">
                     <div class="Hi"><p>Hi,</p></div>
-                    <div class="name"><p>I'm <b>Utkarsh Singh</b></p></div>
+                    <div class="name"><p>I'm <b class="typedIntro"></b></p></div>
                     <div class="job"><p>Front-End Developer / Web Developer /
                             Programmer. </p></div>
                     <br><br>
@@ -66,20 +66,21 @@
                         Gonda Uttar Pradesh, India. I'm a Freelancer, Web
                         Developer, Front-End Developer, Ethical Hacker.
                         <br><br>
-                        I am self-motivated, a smart worker, and a fast learner.
-                        I Have a keen interest in technology, I'm looking
-                        forward to being a professional in coding. I'm a
+
+                        I'm getting my hands dirty in web development,
+                        networking, and ethical hacking. Currently pursing Object Oriented Programming In JavaScript. I have 2 years of
+                        experience in programming, 1.5 years of experience in
+                        Web Development. I'm a self-motivated fast learner who
+                        is able to master skill's quickly, loves to explore new
+                        horizons, and is driven by new technology.
+                        <br><br>
+
+                        I have keen interest in Technology, I'm looking
+                        forward to being a professional in Computer Science. I'm a
                         passionate learner and believe in working for quality,
                         not for quantity.
                         <br><br>
 
-                        I'm getting my hands dirty in web development,
-                        networking, and ethical hacking. I have 2 years of
-                        experience in programming, 1.5 years of experience in
-                        Web Development. I'm a self-motivated fast learner who
-                        is able to master skills quickly, loves to explore new
-                        horizons, and is driven by new technology.
-                        <br><br>
                         My Hobbies are Programming, Gaming, Surfing Internet,
                         Learning new technologies, etc........
                         <br><br>
@@ -96,25 +97,23 @@
                 <p class="heading">Experties</p>
                 <br>
                 <div class="skillscontent">
-                    <!-- <h2>Work In Progress</h2> -->
-                    <p>HTML:</p>
-                    <div class="container">
-                        <div class="skills html">95%</div>
-                    </div>
-
-                    <p>CSS:</p>
-                    <div class="container">
-                        <div class="skills css">90%</div>
-                    </div>
-
-                    <p>JavaScript:</p>
-                    <div class="container">
-                        <div class="skills js">40%</div>
-                    </div>
-
-                    <p>C:</p>
+                    <span><h2>C</h2></span>
                     <div class="container">
                         <div class="skills c">70%</div>
+                    </div>
+                    <span><h2>HTML</h2></span>
+                    <div class="container">
+                        <div class="skills html">100%</div>
+                    </div>
+
+                    <span><h2>CSS</h2></span>
+                    <div class="container">
+                        <div class="skills css">95%</div>
+                    </div>
+
+                    <span><h2>JavaScript</h2></span>
+                    <div class="container">
+                        <div class="skills js">50%</div>
                     </div>
                 </div>
             </div>
@@ -127,9 +126,9 @@
                         target="_blank" class="contact-btn">Mail:
                         29singhutkarsh2907@gmail.com</a>
                     <br>
-                    <a href="tel:7007217225" class="contact-btn">Phone:
+                    <!-- <a href="tel:7007217225" class="contact-btn">Phone:
                         7007217225</a>
-                    <br>
+                    <br> -->
                     <p class="contact-btn">Discord: Utkarsh Solanki #6863</p>
                     <br>
 
@@ -137,16 +136,16 @@
             </div>
         </div>
         <div class="accounts">
-            <a href="https://www.upwork.com/freelancers/~0145c6db557b7b95c4"><img
+            <a href="https://www.upwork.com/freelancers/~0145c6db557b7b95c4" target="_blank"><img
                     src="/images/upwork.jpg" alt="">Upwork</a>
             |
-            <a href="https://www.hackerrank.com/29singhutkarsh21"><img
+            <a href="https://www.hackerrank.com/29singhutkarsh21" target="_blank"><img
                     src="/images/hackerrank.jpg" alt="">HackerRank</a>
             |
-            <a href="https://github.com/utkarshsinghsolanki"><img
+            <a href="https://github.com/utkarshsinghsolanki" target="_blank"><img
                     src="/images/github.png" alt="">Github</a>
             |
-            <a href="mailto:29singhutkarsh2907@gmail.com"><img
+            <a href="mailto:29singhutkarsh2907@gmail.com" target="_blank"><img
                     src="/images/gmail.jpg" alt="">Gmail</a>
         </div>
         <br><br><hr><br><br>
@@ -159,19 +158,31 @@
     <script src="files/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-    var typed = new Typed(".quotes",{
-        strings: [
-        `"Programming Is A Skill Best Acquired By Practice And Example Rather Than From Books..."`,
-        `"There are 10 type's of people in this world, those who understand binary and those who don't....."`,
-        `"Code never lies, comments sometimes do....."`,
-        `"You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity....."`,
-        `"Every programmer is an author....."`,
-        `"First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack...."`,
-        `"Most good programmers do programming not because they expect to get paid or get adulation by the public, but it is fun to program..."`
+    var typed = new Typed(".typedIntro",{
+        strings:[
+        `Utkarsh Singh`,
+        `a Web-Developer`,
+        `a Programmer`
         ],
-        typeSpeed: 25,
-        backSpeed: 15,
+        typeSpeed: 80,
+        backSpeed: 80,
         loop: true
+    
+    })
+    var typed2 = new Typed(".quotes",{
+        strings: [
+    `"Programming Is A Skill Best Acquired By Practice And Example Rather Than From Books..."`,
+    `"There are 10 type's of people in this world, those who understand binary and those who don't....."`,
+    `"Code never lies, comments sometimes do....."`,
+    `"You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity....."`,
+    `"Every programmer is an author....."`,
+    `"First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack...."`,
+    `"Most good programmers do programming not because they expect to get paid or get adulation by the public, but it is fun to program..."`
+    ],
+        typeSpeed: 30,
+        backSpeed: 10,
+        loop: true
+    
     })
 </script>
 </html>
