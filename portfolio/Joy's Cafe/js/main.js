@@ -38,8 +38,9 @@ function requried(){
     }
 }
 function loaded(){
+        let time = Math.random() * (2000 - 500) + 500;
         setInterval(() => {
             document.querySelector('.preloader').style.display = 'none';
             
-        }, 800);
+        }, time);
 }
