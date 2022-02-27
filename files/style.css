@@ -328,7 +328,7 @@ body {
 }
 
 
-footer, footer a {
+footer {
     text-align: center;
     /* margin-top: 50px; */
     background: #10bea4;
@@ -336,6 +336,10 @@ footer, footer a {
     text-decoration: none;
     padding: 20px;
     font-size: .8em;
+}
+footer a{
+    color: #fff;
+    text-decoraction: none;
 }
 
 @media screen and (max-width:800px) {
