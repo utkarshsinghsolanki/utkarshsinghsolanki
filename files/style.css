@@ -221,6 +221,7 @@ body {
     margin: auto;
     text-align: center;
     color: #fff;
+    font-family: system-ui
 }
 
 .txt i b{
@@ -328,14 +329,15 @@ body {
 }
 
 
-footer, footer a {
+footer{
     text-align: center;
     /* margin-top: 50px; */
     background: #10bea4;
     color: #fff;
     text-decoration: none;
     padding: 20px;
-    font-size: .8em;
+    font-size: 1em;
+    font-family: Arial;
 }
 
 @media screen and (max-width:800px) {
