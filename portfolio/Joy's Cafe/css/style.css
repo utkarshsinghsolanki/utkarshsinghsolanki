@@ -295,6 +295,10 @@ footer{
     display: flex;
     animation: footer 10s linear infinite;
 }
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
 @keyframes footer{
     0%{
         background: #b92779;
