@@ -8,26 +8,15 @@ function time(){
     let minitueDisplay = document.getElementById('minitue');
     let secDisplay = document.getElementById('sec');
 // Getting Current Seconds Minutes and Hours
-    let sec = new Date().getSeconds();
-    let minitue = new Date().getMinutes();
-    let hour = new Date().getHours();
 // Function to continusly update time
-    setInterval(function(){
-        sec = sec + 01;
-        // console.log(sec)
+setInterval(function(){
+        let sec = new Date().getSeconds();
+        let minitue = new Date().getMinutes();
+        let hour = new Date().getHours();
+        hour = (hour % 12) || 12;
         secDisplay.innerText = sec;
         minitueDisplay.innerText = minitue;
         hourDisplay.innerText = hour;
-        if(sec==59){
-                sec = 0;
-                minitue += 1;
-                minitueDisplay.innerText = minitue;
-            }
-        if(minitue==59){
-            minitue = 0;
-            hour += 1;
-            hourDisplay.innerText = hour;
-        }
     }, 1000);
 }
 // Adding event listener on start button
@@ -37,19 +26,45 @@ function stopWatch(){
     let hourDisplay = document.getElementById('stopHour');
     let minitueDisplay = document.getElementById('stopMinitue');
     let secDisplay = document.getElementById('stopSec');
-    let sec;
+    let milDisplay = document.getElementById('stopmil');
+    let mil = 00;
+    let sec =00;
+    let minitue = 00;
+    let hour = 00;
+    
+    if(milDisplay.innerText==0){
+        mil = 00;
+    }
+    else{
+        mil = parseInt(milDisplay.innerText)
+    }
     if(secDisplay.innerText==0){
         sec = 00;
     }
     else{
         sec = parseInt(secDisplay.innerText)
     }
-    let minitue = 00;
-    let hour = 00;
+    if(minitueDisplay.innerText==0){
+        minitue = 00;
+    }
+    else{
+        minitue = parseInt(minitueDisplay.innerText)
+    }
+    if(hourDisplay.innerText==0){
+        hour = 00;
+    }
+    else{
+        hour = parseInt(hourDisplay.innerText)
+    }
 // To continusly update Time
     var stopwatch = setInterval(function updateTime(){
-        sec = sec + 01;
-        secDisplay.innerText = sec;
+        mil += 1;
+        milDisplay.innerText = mil;
+        if(mil==100){
+            mil=0;
+            sec = sec + 01;
+            secDisplay.innerText = sec;
+        }        
         if(sec==60){
             sec = 0;
             minitue += 1;
@@ -60,7 +75,7 @@ function stopWatch(){
             hour += 1;
             hourDisplay.innerText = hour;
         }
-    },1000);
+    },1 );
 // To stop stopwatch
     document.getElementById('stopStop').addEventListener('click', function(){
         clearInterval(stopwatch)
@@ -72,9 +87,11 @@ document.getElementById('resetStop').addEventListener('click', function(){
     let hourDisplay = document.getElementById('stopHour');
     let minitueDisplay = document.getElementById('stopMinitue');
     let secDisplay = document.getElementById('stopSec');
+    let milDisplay = document.getElementById('stopmil');
     hourDisplay.innerText = '00';
     minitueDisplay.innerText = '00';
-    secDisplay.innerText = '0';
+    secDisplay.innerText = '00';
+    milDisplay.innerText = '00'
 });
 // Calling Function Alarm
 alarm();
@@ -92,12 +109,23 @@ function alarm(){
         document.querySelector('.alarmScreen').style.display = 'none';
     });
 // Activating Timmer
-    document.getElementById('activateAlarm').addEventListener('click', function activateAlarm(){
-        document.querySelector('.alarmScreen').style.display = 'none';          // Close dialog box after activating
+document.getElementById('activateAlarm').addEventListener('click', function activateAlarm(){
+    clearInterval(alarm)
+    document.querySelector('.alarmScreen').style.display = 'none';          // Close dialog box after activating
     // Declaring Variables
-        let sec = document.getElementById('setalS').value;
-        let minitue = document.getElementById('setalM').value;
-        let hour = document.getElementById('setalH').value;
+    let sec = 0;
+    let minitue = 0
+    let hour = 0
+    if(!(secDisplay.innerText==0)){
+        sec = 00;
+        minitue = 00;
+        hour = 00;
+    }
+    else{
+        sec = document.getElementById('setalS').value;
+        minitue = document.getElementById('setalM').value;
+        hour = document.getElementById('setalH').value;
+    }
     // If someone has enter wrong input
         if((hour.length==0)&&(hour.length==0)&&(hour.length==0)){
             alert('Please Enter Correct Value')
