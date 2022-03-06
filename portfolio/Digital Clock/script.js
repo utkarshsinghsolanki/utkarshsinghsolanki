@@ -166,4 +166,4 @@ document.getElementById('activateAlarm').addEventListener('click', function acti
             }
         },1000)
     });
-}
+}   
