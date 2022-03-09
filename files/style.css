@@ -145,6 +145,7 @@ body {
 
 .main {
     width: 80vw;
+    min-width: 300px;
     margin: auto;
 }
 
@@ -247,7 +248,7 @@ body {
 }
 
 .js {
-    width: 55%;
+    width: 70%;
 }
 
 .c {
