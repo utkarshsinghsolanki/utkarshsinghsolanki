@@ -171,11 +171,7 @@ body {
 .job {
     opacity: 0.8;
 }
-.button{
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-}
+
 .button a {
     padding: 10px 15px;
     color: #10bea4;
@@ -410,6 +406,11 @@ footer{
     .container  i{
         font-size: large;
         font-weight: bold;
+    }
+    .button{
+        min-width: 300px;
+        display: flex;
+        justify-content: center;
     }
 
 }
