@@ -1,4 +1,7 @@
 console.log("Digital Clock")
+let validHour = false
+let validMin = false;
+let validSec = false;
 // Calling Function Time
 time();
 
@@ -7,7 +10,6 @@ function time(){
     let hourDisplay = document.getElementById('hour');               
     let minitueDisplay = document.getElementById('minitue');
     let secDisplay = document.getElementById('sec');
-// Getting Current Seconds Minutes and Hours
 // Function to continusly update time
 setInterval(function(){
         let sec = new Date().getSeconds();
@@ -75,7 +77,7 @@ function stopWatch(){
             hour += 1;
             hourDisplay.innerText = hour;
         }
-    },1 );
+    },10);
 // To stop stopwatch
     document.getElementById('stopStop').addEventListener('click', function(){
         clearInterval(stopwatch)
@@ -110,7 +112,7 @@ function alarm(){
     });
 // Activating Timmer
 document.getElementById('activateAlarm').addEventListener('click', function activateAlarm(){
-    clearInterval(alarm)
+    if(validHour == true && validMin == true && validSec == true){
     document.querySelector('.alarmScreen').style.display = 'none';          // Close dialog box after activating
     // Declaring Variables
     let sec = 0;
@@ -127,10 +129,6 @@ document.getElementById('activateAlarm').addEventListener('click', function acti
         hour = document.getElementById('setalH').value;
     }
     // If someone has enter wrong input
-        if((hour.length==0)&&(hour.length==0)&&(hour.length==0)){
-            alert('Please Enter Correct Value')
-            return ;
-        }
     // Updating Timmer to DOM
         secDisplay.innerText = parseInt(sec);
         minitueDisplay.innerText = parseInt(minitue);
@@ -143,7 +141,6 @@ document.getElementById('activateAlarm').addEventListener('click', function acti
                     alert('Timmer Is Over');
                     clearInterval(alarm);
                     sec = 00;
-                    console.log('Trigered')
                 }
                 sec = 60;
                 if(minitue==0){
@@ -165,5 +162,41 @@ document.getElementById('activateAlarm').addEventListener('click', function acti
                 hourDisplay.innerText = hour;
             }
         },1000)
+    document.getElementById('setalS').value = '';
+    document.getElementById('setalM').value = '';
+    document.getElementById('setalH').value = '';
+    }
+    else{
+        alert('Please enter Valid Time')
+        console.log('Please enter')
+    }
     });
 }   
+
+document.getElementById('setalH').addEventListener('blur', ()=>{
+    if(document.getElementById('setalH').value <= 24 && document.getElementById('setalH').value >= 0)
+    {
+        validHour = true;
+    }
+    else{
+        validHour = false;
+    }
+});
+document.getElementById('setalM').addEventListener('blur', ()=>{
+    if(document.getElementById('setalM').value <= 59 && document.getElementById('setalM').value >= 0)
+    {
+        validMin = true;
+    }
+    else{
+        validMin = false;
+    }
+});
+document.getElementById('setalS').addEventListener('blur', ()=>{
+    if(document.getElementById('setalS').value <= 59 && document.getElementById('setalS').value >= 0)
+    {
+        validSec = true;
+        validSec = true;
+    }
+    else{
+    }
+});
