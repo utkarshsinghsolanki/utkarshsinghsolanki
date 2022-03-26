@@ -250,18 +250,22 @@ body {
 }
 
 .js {
-    width: 70%;
+    width: 98%;
 }
 
 .c {
     width: 70%;
 }
+.node{
+    width: 20%;
+    min-width: 70px;
+}
 
-.html,.css,.js,.c{
+.skills-bar{
     border-radius: 100px;
     background: #10bea4;
     padding: 5px;
-    margin: 10px 0; 
+    margin: 10px 0;
 }
 
 .container{

@@ -136,10 +136,11 @@ body {
     border-radius: 5px;
     margin: 5px 10px;
 }
-.project-btn:hover {
+.project-btn:hover{
     background: #10bea4;
     color: #fff;
 }
+
 @media screen and (max-width:800px) {
     .header nav ul li {
         display: block;
@@ -156,7 +157,7 @@ body {
         text-decoration: underline;
         color: #fff;
     }
-
+    
     .nav {
         background: linear-gradient(#1e1e1e,#000,#10bea4);
         /* background: linear-gradient(to right, #171717, #0d0d0d, #000); */
@@ -172,7 +173,7 @@ body {
     .header nav ul li a {
         padding: 10px 30px;
     }
-
+    
     .menu-btn {
         display: block;
         width: 5vw;
@@ -181,11 +182,15 @@ body {
         cursor: pointer;
         min-width: 25px;
     }
-
+    
     .nav-go {
         left: -200px;
     }
 
+    .project-btn:active{
+        background: #10bea4;
+        color: #fff;
+    }
 }
 
 
