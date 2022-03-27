@@ -20,7 +20,7 @@ function navgo() {
 
 document.getElementById("searchBar").addEventListener("input", () => {
   let value = document.getElementById("searchBar").value.toLowerCase();
-  let card = document.getElementsByClassName("project-btn");
+  let card = document.getElementsByClassName("project-content");
   Array.from(card).forEach((element) => {
     if (element.innerText.toLowerCase().includes(value)){
       element.style.display = "block";
