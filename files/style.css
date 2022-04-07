@@ -112,8 +112,8 @@ body {
 .bgimg {
     background: url("/images/bg.png") no-repeat scroll;
     /* height: 100vh; */
-    max-height: 100vh;
-    height: 100vh;
+    max-height: 95vh;
+    height: 95vh;
     background-attachment: fixed;
     /* background-size: cover; */
     background-size: 100% 100%;
@@ -373,7 +373,7 @@ footer{
         padding: 10px;
         position: absolute;
         left: 0;
-        top: 12vh;
+        top: 13vh;
         height: 100vh;
         opacity: 0.9;
         box-sizing: border-box;
